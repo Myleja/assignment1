@@ -12,19 +12,22 @@ html {
 body {
     background: linear-gradient(to right, #535458 0%, #535458 30%, #838488 30%, #838488 100%);
 }
-a {
-    color: black;
+/* navigation*/
+
+nav a {
+    color: white;
     text-decoration: none;
 }
-li {
+nav li {
 list-style: none;
 font-size: 2rem;
 font-weight: bold;
 }
-li a:hover {
-    color:white;
+nav li a:hover {
+color: #262729;
+
 }
-li a.active {
+nav li a.active {
     font-size: 2.4rem;
     text-decoration-line: underline;
 }
@@ -35,11 +38,17 @@ nav ul {
     display: flex;
     min-height: 10vh;
     padding: 1rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    
 }
-.main {
+nav {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+    
+/* main section */
+
+.main-section {
     display: flex;
     flex-wrap: wrap;
     min-height: 80vh;
@@ -51,11 +60,12 @@ nav ul {
     justify-content: center;
     align-items: center;
     
+    
 
 }
 .main-text {
-    flex: 1 1 10rem;
     display: flex;
+    flex: 1 1 10rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -72,27 +82,57 @@ nav ul {
     font-size: 2.4rem;
 }
 .main-text button {
-    margin-top: 10rem;
+margin-top: 10rem;
 padding: 1rem 2rem;
-border: 2px solid;
-background-color: #838488;
+border: none;
+background-color: #535458;
 font-size: 1.5rem;
 font-weight: bold;
 border-radius: 10px;
 }
+.main-text button a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 .main-text button:hover {
     transform: scale(1.1);
-    background-color: #838488;
     box-shadow: 0 2px 4px -1px;
 }
-footer {
-    width: 80%;
-    margin: auto;
+/* footer*/
+.main-footer {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+    }
 
+.footer-copyright {
+    display: flex;
+    flex: 1 1 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social-media  {
+    display: flex;
+    flex: 1 1 10rem;
+    justify-content: center;
+    align-items: center;
+}
+footer ul {
+    display: flex;
+}
+
+footer i {
+    color: #262729;
+    padding: 2rem;
+    }
+footer li {
+    list-style: none;
+}
+footer i:hover {
+    transform: scale(1.1);
+    color: black;
 }
 
 
