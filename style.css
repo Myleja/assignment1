@@ -343,24 +343,25 @@ html {
     .main-img {
         padding-top: 4rem;
     }
-    nav li a.active {
-        text-decoration: none;
+    nav li {
         background-color: rgb(112, 109, 119);
         padding: 0.5rem;
     }
-    .button a {
-        font-size: 1.5rem;
-    }
-    
-    .main-text {
-        flex-basis: 50%;
-
+    nav li a.active {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(112, 109, 119);
+        padding: 0.5rem;
     }
     .button {
+        padding: 2rem;
+        font-size: 1.7rem;
         margin-bottom: 4rem;
     }
+    .main-text {
+        flex-basis: 50%;
+    }
     
- 
     .cv-main-section {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -375,6 +376,7 @@ html {
     hr {
         width: 100%; /* shorter line */
     }
+    
     
 }
     
