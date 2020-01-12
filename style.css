@@ -235,6 +235,7 @@ figcaption {
 .contact-details,
 .skills ul, p {
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 hr {
