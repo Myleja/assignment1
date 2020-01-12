@@ -338,19 +338,21 @@ html {
     }
     .main-section {
         display: flex;
-        flex-basis: 50%;
+        flex-wrap: wrap;
+    }
+    .main-text {        /* wraping flex item for mobile view  */
+        flex: 0 0 100%;
     }
     .main-img {
         padding-top: 4rem;
     }
     nav li {
-        background-color: rgb(112, 109, 119);
+        background-color: #535458;
         padding: 0.5rem;
     }
     nav li a.active {
         text-decoration: none;
         color: white;
-        background-color: rgb(112, 109, 119);
         padding: 0.5rem;
     }
     .button {
@@ -358,10 +360,6 @@ html {
         font-size: 1.7rem;
         margin-bottom: 4rem;
     }
-    .main-text {
-        flex-basis: 50%;
-    }
-    
     .cv-main-section {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -376,8 +374,13 @@ html {
     hr {
         width: 100%; /* shorter line */
     }
-    
-    
+    .main-footer {
+        display: flex;
+        flex-wrap: wrap-reverse;        /* footer wrap  */
+    }
+    .footer-social-media {
+        flex: 0 0 100%;
+    }
 }
     
 
