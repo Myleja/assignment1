@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="robots" content="index, folow">
     <link rel="icon" type="image/png" href="/briefcase1.png" sizes="16x16">
+    <script src="https://kit.fontawesome.com/d07e9aeb39.js" crossorigin="anonymous"></script>
 </head>
 <body>
         <header>
@@ -21,6 +22,29 @@
                     </ul>
                 </nav>
                 </header>
-    
+    <section class="form-section">
+        <h2>Send me a message:</h2>
+        <form>
+            <label for="name">Name*</label>
+            <input type="text" name="name" id="name" required> <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input  -->
+            <label for="email">E-mail*</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-copyright">
+        <h2>Oksana Scerbakovaite &copy; 2020</h2>
+    </div>
+    <div class="footer-social-media">
+        <ul>
+        <li><a href="https://github.com/Myleja"><i class="fab fa-github-square fa-3x"></i></a></li>
+        <li><a href="https://linkedin.com/in/oksana-scerbakovaite"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
+        <li><a href="mailto: oxannyte@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a></li>
+    </ul>
+</div>
+</footer>
 </body>
 </html>

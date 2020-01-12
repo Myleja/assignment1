@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
 
 * {
     margin: 0;
@@ -7,15 +7,30 @@
 }
 html {
     font-size: 62.5%;
-    font-family: 'Alegreya', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body {
-    background: linear-gradient(to right, #535458 0%, #535458 30%, #838488 30%, #838488 100%);
+   background-image: url(pictures/vintage-concrete.png);
+
 }
 /* navigation*/
 
+nav ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    min-height: 10vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 nav li {
@@ -24,42 +39,27 @@ font-size: 2rem;
 font-weight: bold;
 }
 nav li a:hover {
-color: #262729;
-
+text-decoration: underline;
 }
 nav li a.active {
-    font-size: 2.4rem;
-    text-decoration-line: underline;
+    font-size: 2.2rem;
+    text-decoration: double underline;
 }
 
-nav ul {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    min-height: 10vh;
-    padding: 1rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-nav {
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
-}
+
     
-/* main section */
+/* Home main section */
 
 .main-section {
     display: flex;
     flex-wrap: wrap;
     min-height: 80vh;
-
 }
 .main-img {
     display: flex;
     flex: 1 1 10rem;
     justify-content: center;
     align-items: center;
-    
     
 
 }
@@ -74,21 +74,21 @@ nav {
 }
 .main-text h1 {
     padding: 1rem;
-    font-size: 3.6rem;
+    font-size: 2.5rem;
 
 }
 .main-text h2 {
     padding: 1rem;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 .main-text button {
-margin-top: 10rem;
+margin-top: 7rem;
 padding: 1rem 2rem;
 border: none;
 background-color: #535458;
 font-size: 1.5rem;
-font-weight: bold;
-border-radius: 10px;
+font-weight: bolder;
+border-radius: 5px;
 }
 .main-text button a {
     color: white;
@@ -96,8 +96,12 @@ border-radius: 10px;
     cursor: pointer;
 }
 .main-text button:hover {
-    transform: scale(1.1);
+    background:#3d3f42;
     box-shadow: 0 2px 4px -1px;
+    
+}
+.main-text button:focus {
+    background:#262729;
 }
 /* footer*/
 .main-footer {
@@ -105,6 +109,7 @@ border-radius: 10px;
     min-height: 10vh;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 1rem; 
     }
 
 .footer-copyright {
@@ -134,5 +139,160 @@ footer i:hover {
     transform: scale(1.1);
     color: black;
 }
+/*portfolio*/
 
+section h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem;
+}
+.portfolio-main-section {
+    min-height: 80vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-gap: 1rem;
+justify-items: center;
+align-items: center;
+justify-content: center;
+}
+
+.project1,
+.project2,
+.project3,
+.project4 {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+figcaption {
+    text-align: center;
+    font-size: 2rem;
+}
+/* CV section */
+
+.cv-main-section {
+    min-height: 80vh;
+    display: grid;
+    padding: 1rem;
+    grid-column-gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "section1 ."
+    "section2 section3"
+    "section2 section4"
+    "section2 section5";
+}
+.top-text {
+    grid-area: section1;
+}
+.contact-details {
+    grid-area: section2;
+    justify-self: center;
+}
+.about-me {
+    grid-area: section3;
+}
+.skills {
+    grid-area: section4;
+}
+.education {
+    grid-area: section5;
+}
+
+.top-text h2 {
+    font-size: 3rem;
+}
+.top-text, h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.about-me,
+.education,
+.contact-details,
+.skills h2 {
+    font-size: 2rem;
+}
+.about-me,
+.education,
+.contact-details,
+.skills ul, p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+hr {
+    width: 300%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #535458;
+
+}
+.skills ul {
+    list-style-position: inside;
+}
+/*Contact form */
+
+.form-section {
+min-height: 80vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-section h2 {
+    padding-bottom: 3rem;
+    font-size: 2rem;
+}
+.form-section button {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #535458;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+form input:focus {
+    outline: 1px solid;
+}
+form textarea:focus {
+    outline: 1px solid;
+}
+.form-section button:hover {
+    background:#3d3f42;
+}
+.form-section button:focus {
+background: #262729;
+}
+form label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+form input {
+    width: 100%;
+    height: 3rem;
+    background-color: #cdcfd8;
+    border-radius: 5px;
+}
+form textarea {
+    background-color: #cdcfd8;
+    border-radius: 5px;
+}
 
